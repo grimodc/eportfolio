@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport & Other Activities</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* === HERO SECTION === */
+    .hero {
+      text-align: left;
+      padding: 4em 1em;
+      background: linear-gradient(135deg, #1565c0, #42a5f5);
+      color: white;
+      border-radius: 12px;
+      margin-bottom: 3em;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* === SPORT CARDS === */
+    .sport-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2em;
+    }
+
+    .sport-card {
+      background-color: white;
+      flex: 1 1 280px;
+      max-width: 340px;
+      padding: 1.5em;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .sport-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .sport-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1em;
+      border: 2px solid #1e90ff;
+    }
+
+    .sport-card h3 {
+      color: #0d47a1;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+    }
+
+    .sport-card p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .sport-link {
+      display: inline-block;
+      background-color: #1976d2;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+      margin-top: 1em;
+    }
+
+    .sport-link:hover {
+      background-color: #0d47a1;
+    }
+
+    /* === VIDEO SECTION === */
+    .video-section {
+      margin-top: 4em;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      color: #1565c0;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2em auto;
+    }
+
+    .video-container iframe,
+    .video-container video {
+      width: 90%;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    /* === DATA SECTION === */
+    .data-section {
+      background: #f7faff;
+      border-radius: 12px;
+      padding: 2em;
+      margin-top: 4em;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .data-section h2 {
+      color: #1976d2;
+      text-align: center;
+    }
+
+    .data-section p {
+      text-align: center;
+      color: #444;
+      max-width: 800px;
+      margin: 1em auto;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER COMMUN ===== -->
+  <header>
+    <h1 class="title">Guillaume de Crény</h1>
+    <div class="menu-toggle">&#9776;</div>
+    <nav class="navbar">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="courses.html">Engineering course</a></li>
+      <li><a href="international.html">International</a></li>
+      <li><a href="sustainability.html">Sustainability & Civic Engagement</a></li>
+      <li><a href="sport.html" class="active">Sport and other activities</a></li>
+      <li><a href="career.html">Career and Development</a></li>
+    </nav>
+  </header>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main>
+    <div class="hero">
+      <h1>Sport & Other Activities</h1>
+      <p>Sport has always been an essential part of my personal balance. It helps me stay motivated, focused, and disciplined — qualities I also apply in my studies and projects.</p>
+    </div>
+
+    <!-- === PERSONAL SPORTS SECTION === -->
+    <section id="personal-sports">
+      <h2>Personal Sports Activities</h2>
+      <div class="sport-container">
+        <div class="sport-card">
+          <img src="files/bike.jpg" alt="Cycling" class="sport-img">
+          <h3>Cycling</h3>
+          <p>I regularly go cycling to discover countryside and landscapes. It’s both a physical challenge and a way to clear my mind.</p>
+        </div>
+
+        <div class="sport-card">
+          <img src="files/run.PNG" alt="Running on strava" class="sport-img">
+          <h3>Running</h3>
+          <p>I started running regularly only a year ago.
+Before that, I used to run occasionally, without a clear routine.
+Since I’ve made it part of my weekly schedule, I’ve learned to better control myself, stay consistent, and understand the importance of discipline — because running is a demanding sport where real progress comes only through patience and perseverance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- === ENSEEIHT SPORTS SECTION === -->
+    <section id="school-sports">
+      <h2>Sports at ENSEEIHT</h2>
+      <div class="sport-container">
+        <div class="sport-card">
+          <h3>Semester 5 - Run & Fit</h3>
+          <p>At ENSEEIHT, I’m part of a sports module called <strong>Run & Fit</strong> , which combines running and cross-training.
+At first, it felt quite similar to what I was already doing on my own but it turned out to be a whole new experience.
+Training with friends from school, sharing the effort and the good mood every Friday morning, gave the activity a real team spirit.
+It’s also the first time I’ve worked with a professional coach, and it’s very different from high school PE classes : more structured, more demanding, and much more rewarding.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- === VIDEO SECTION === -->
+    <section class="video-section">
+      <h2>Linking Sport, Maps & Data</h2>
+      <p>Here’s a short video showing one of my bike rides made with the application Relive : a mix of sport, discovery, and technology.</p>
+      <div class="video-container">
+        <video controls>
+          <source src="files/relive.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h3>Analyzing performance through data</h3>
+      <p>
+        Tracking my sport activities on Strava or Relive has strengthened my curiosity for
+        <strong>data analysis</strong> and <strong>mapping tools</strong>.
+        I enjoy observing how metrics such as speed, altitude, and time can be visualized to show progression,
+        but also how they can be exploited to create activity maps (Strava) or dynamic videos (Relive).
+        This analytical mindset is closely related to my interest in <strong>data science</strong> and
+        <strong>applied mathematics</strong>, bridging my studies and my hobbies.
+        
+      </p>
+    </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Guillaume de Crény</p>
+  </footer>
+
+  <!-- ===== JS COMMUN ===== -->
+  <script>
+    // Sticky header
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    // Menu burger
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainability & Civic Engagement</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Style spécifique à la page */
+    .hero {
+      text-align: left;
+      padding: 4em 1em;
+      background: linear-gradient(135deg, #2e7d32, #81c784);
+      color: white;
+      border-radius: 12px;
+      margin-bottom: 3em;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Section cards */
+    .sustainability-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2em;
+    }
+
+    .sustainability-card {
+      background-color: white;
+      flex: 1 1 280px;
+      max-width: 300px;
+      padding: 1.5em;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .sustainability-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .sustainability-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+
+    .sustainability-card h3 {
+      color: #2e7d32;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+    }
+
+    .sustainability-card p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 1em;
+    }
+
+    .sustainability-link {
+      display: inline-block;
+      background-color: #2e7d32;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .sustainability-link:hover {
+      background-color: #1b5e20;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER COMMUN ===== -->
+  <header>
+  <h1 class="title">Guillaume de Crény</h1>
+  <div class="menu-toggle">&#9776;</div>
+  <nav class="navbar">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="courses.html" >Engineering course</a></li>
+      <li><a href="international.html" >International</a></li>
+      <li><a href="sustainability.html" class="active">Sustainability & Civic Engagement</a></li>
+      <li><a href="sport.html">Sport and other activities</a></li>
+      <li><a href="career.html">Career and Development</a></li>     
+    </nav>
+</header>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main>
+    <div class="hero">
+      <h1>Sustainability & Civic Engagement</h1>
+      <p>This page focuses on projects related to sustainability, social responsibility, and community engagement. These projects aim to tackle real-world problems and make a positive impact on society.</p>
+    </div>
+
+    <section id="green-projects">
+      <h2>🌱 Green Initiatives and Sustainability Projects</h2>
+      <div class="sustainability-container">
+        <div class="sustainability-card">
+          <img src="files/cleanwalk.jpg" alt="Recycling project" class="sustainability-img">
+          <h3>Clean Walk in Toulouse</h3>
+          <p>At the end of our first week at ENSEEIHT, everyone took part in a clean-up walk.
+            It was a fun and engaging moment, where we came together to clean the streets of Toulouse.
+            Not only did we contribute to cleaning the area, but it also helped raise awareness about environmental issues within our community.
+            </p>
+        </div>
+
+        <div class="sustainability-container">
+        <div class="sustainability-card">
+          <img src="files/fresque.jpg" class="sustainability-img">
+          <h3>Collective workshop : "Fresque du Climat" with 8 classmates.</h3>
+          <p>
+            This collaborative exercise was an opportunity to dive into climate issues, analyze their causes and consequences, and discuss potential solutions. 
+            It encouraged critical thinking and collective responsibilits.
+            This led to the creation of a tree-like poster illustrating the causal links between various aspects of climate change.
+            We then had a discussion session with our facilitator, where we explored potential solutions that could help drive change.
+            </p>
+          <a href="https://fresqueduclimat.org/" class="sustainability-link">More details about this project</a>
+        </div>
+        </div>
+
+        <div class="sustainability-container">
+        <div class="sustainability-card">
+          <img src="files/ayav.jpg" class="sustainability-img">
+          <h3>"Allons-y à vélo" challenge</h3>
+          <p>
+            Every year, the University of Toulouse takes part in a challenge: to come to university by bike for a week.
+            I have taken part in this challenge every year since it began, and it has motivated me to use my bike more often and public transport less frequently.
+            Ayav is the French acronym for “Let's go by bike.”
+          </p>
+          <a href="https://www.univ-toulouse.fr/actualites/challenge-allons-y-velo" class="sustainability-link">More about the challenge here</a>
+        </div>
+        </div>
+
+        <div class="sustainability-container">
+        <div class="sustainability-card">
+          <img src="files/futurs-proches-yellow.png" class="sustainability-img">
+          <h3>"Futurs proches" Festival</h3>
+          <p>
+            During one day on the 9th of october, we were free to visit other camupuses in Toulouse and attend to conferences and activities about all kinds of transitions.
+            I atteded to a very interesting conference of Jean-Baptiste Fressoz at Sciences PO Toulouse about what we call "transitions" (energetic transitions, climate...)
+            and to a debate about the documentary "Skills : Make it work" of Samuel Durand about re-skilling and adaptability in fast changing professional world.
+          </p>
+          <p><a href="https://futurs-proches.univ-toulouse.fr/" class="sustainability-link"> Futurs proches </a></p>
+          <p><a href="https://www.youtube.com/watch?v=V4zaP7d4Z_Y" class="sustainability-link"> Skills : make it work </a></p>
+          <a href="https://legrandcontinent.eu/fr/2024/02/22/une-monde-sans-transition-une-conversation-avec-jean-baptiste-fressoz/" class="sustainability-link"> A very good summary of Fressoz's conference </a>
+        </div>
+        </div>
+
+
+    </section>
+
+    <section id="community-engagement">
+      <h2>🤝 Civic Engagement and Volunteering</h2>
+      
+        <div class="sustainability-container">
+        <div class="sustainability-card">
+          <h3>Delegate of my lab-lessons-group at ENSEEIHT</h3>
+          <p>
+            As the delegate of my TP (practical work) group, I play a crucial role in facilitating communication between the professors and the students in my group. I ensure that everyone is informed about course requirements, assignments, and any changes in the schedule. By acting as a liaison, I help ensure that all students feel supported and that their concerns are conveyed to the professors in a timely manner. This role has allowed me to develop leadership and organizational skills while also fostering a sense of responsibility toward my peers.
+          </p>
+        </div>
+        </div>
+        <div class="sustainability-container">
+        <div class="sustainability-card">
+          <h3>Creating a Learning Hub During the COVID-19 Pandemic</h3>
+          <p>
+            During the COVID-19 pandemic in 2020, while in high school, I took the initiative with a classmate to create a Discord server to maintain the continuity of our education. The server became a virtual classroom, where we could share resources, host study sessions, and keep in touch. It was essential to organize the server to make it user-friendly, as it was a space not only for academic work but also for social interaction. We also provided training for teachers on how to use the platform, ensuring that they could effectively engage with students. The project was an important way to ensure that our peers could continue learning and collaborating, despite the circumstances.
+          </div>
+        </div>
+        <div class="sustainability-container">
+        <div class="sustainability-card">
+          <h3>Creating a Learning Hub During the COVID-19 Pandemic</h3>
+          <p>
+            During the COVID-19 pandemic in 2020, while in high school, I took the initiative with a classmate to create a Discord server to maintain the continuity of our education. The server became a virtual classroom, where we could share resources, host study sessions, and keep in touch. It was essential to organize the server to make it user-friendly, as it was a space not only for academic work but also for social interaction. We also provided training for teachers on how to use the platform, ensuring that they could effectively engage with students. The project was an important way to ensure that our peers could continue learning and collaborating, despite the circumstances.
+          </div>
+        </div>
+        <div class="sustainability-container">
+        <div class="sustainability-card">
+          <h3>Tutoring in Mathematics and Physics-Chemistry</h3>
+          <p>
+            I provided tutoring in mathematics and physics-chemistry to middle and high school students. This experience allowed me to share my knowledge and help students better understand concepts they found difficult. I tailored my lessons to meet the specific needs of each student, helping them build confidence and improve their academic performance. It also helped me develop my communication skills, as I had to explain complex ideas in a clear and accessible way. It was truly rewarding to see my students progress and succeed, knowing I had contributed to their educational journey.
+          </div>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Guillaume de Crény</p>
+  </footer>
+
+  <!-- ===== JS COMMUN ===== -->
+  <script>
+    // Sticky header compact
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if(window.scrollY > 50){
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Menu burger mobile
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+  </script>
+
+</body>
+</html>

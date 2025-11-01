@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="title">Guillaume de Crény</h1>
+  <div class="menu-toggle">&#9776;</div>
+  <nav class="navbar">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="courses.html", class="active">Engineering course</a></li>
+      <li class="has_undernav">
+        <a href="international.html">International</a>
+        <ul class="undernav">
+          
+
+
+          <li><a href="international.html#pce">PCE</a></li>
+          <li><a href="international.html#spanish">Spanish</a></li>
+        </ul>
+      </li>
+      <li><a href="civic.html">Sustainability & Civic Engagement</a></li>
+      <li><a href="sport.html">Sport and other activities</a></li>
+      <li><a href="career.html">Career and Development</a></li>     
+    </nav>
+</header>
+
+
+  <main>
+  <section id="timeline">
+  <h2>My Academic Journey</h2>
+  <div class="timeline-container">
+
+    <div class="timeline-card">
+      <div class="timeline-logo">
+        <img src="files/logostlouis.png" alt="Lycée logo">
+      </div>
+      <h3>Lycée Saint-Louis (High School)</h3>
+      <span class="timeline-year">2019 - 2022</span>
+      <p><strong>French baccalaureate</strong></p>
+      <p>With specialities</p>
+      <ul, label="spebac">
+        <li> Mathematics + advanced math option</li>
+        <li> Physics & Chemistry </li>
+        <li> Geopolitic & Political Sciences</li>
+      </ul>
+      
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-logo">
+        <img src="files/logout3.jpg" alt="Université logo">
+      </div>
+      <h3>Université Toulouse III - Paul Sabatier</h3>
+      <span class="timeline-year">2022 - 2025</span>
+      <p>Bachelor's degree in applied math (Applied Math for Industry, Engineering & Innovation, MAPI3) </p>
+      <p>During the first two years : basis in linear algebra, analysis, calculus with elective courses in computer sciences</p>
+      <p>In third year : Fourier Analysis, Stochastics Simulations, Algorithmic and Programming</p>
+    </div>
+
+    <div class="timeline-card">
+      <div class="timeline-logo">
+        <img src="files/logotlsinp.png" alt="École d'ingénieur logo">
+      </div>
+      <h3>Toulouse INP ENSEEIHT (Engineering School)</h3>
+      <span class="timeline-year">2025 - 2028</span>
+      <p>Ongoing</p>
+      <p>Continuing my studies at ENSEEIHT at the department of numerical and digital sciences. This department is the result of the merger of Applied math department and computer science/networks. </p>
+      <p>It's the speciality that best suit my needs and interests with applied math and computer science.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section id="courses">
+  <h2>Courses Overview</h2>
+
+  <div class="courses-container">
+
+    <div class="course-box uni">
+      <h3>Université Toulouse III - Paul Sabatier</h3>
+      <p><strong>Bachelor’s degree in Applied Mathematics (MAPI3)</strong></p>
+      <ul>
+        <li>Linear Algebra, Analysis, Calculus (Semesters 1-4)</li>
+        <li>Selective course in computer Science (Python, Algorithmics) (Semesters 1-6)</li>
+        <li>Advances mathmatics : measure theory, topology, theoric study for ODE (Semester 5)</li>
+        <li>Probability and Statistics, Numerical Methods for ODE, Fourier Analysis (Semester 6)</li>
+      </ul>
+    </div>
+
+    <div class="course-box enseeiht">
+      <h3>ENSEEIHT – Department of Digital and Numerical Sciences</h3>
+      <p><strong>Engineering cycle (Applied Math, Computer Science & Networks)</strong></p>
+      <ul>
+        <li>Numerical Analysis, Optimization, Data Analysis</li>
+        <li>Imperative programming in Ada</li>
+        <li>Computer modeling and architecture</li>
+        <li>Integration and Probabilities</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="projects-intro">
+    Here are some of the projects I’ve worked on during my studies — from applied mathematics to data analysis and web development.
+  </p>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Final Bachelor degree project</h3>
+      <p> citation lorenz </p>
+      <p>Together with three other students, we conducted an in-depth study of the <strong> Lorenz Dynamical System </strong>, a set of nonlinear ordinary differential equations known for its chaotic behavior.</p>
+
+      <p>Our work combined both <strong>theoretical analysis</strong> and <strong>numerical experimentation</strong>: we first explored the mathematical properties of the system — stability, sensitivity to initial conditions, and attractors — before implementing <strong>numerical methods</strong> to visualize and analyze its chaotic trajectories.</p>
+This project allowed us to deepen our understanding of <strong>nonlinear dynamics, ODE solvers,</strong> and <strong>scientific computation</strong> using tools such as Python and Matplotlib.</p>
+      <div class="project-links">
+        <a href="files/lorenz.pdf" target="_blank"> Here is the Report (PDF, in french)</a>
+        <a href="files/slideslorenz.pdf" target="_blank"> and the Slides (PDF, in french) </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Presentation about Radon Transform</h3>
+      <p>As part of a mathematics and imaging course, I gave a 10mn-presentation on the <strong>Radon Transform</strong>, a fundamental mathematical tool used in <strong>computed tomography</strong>.
+      The goal was to explain how this transform allows <strong>the reconstruction of an image from its projections</strong>, as done in medical scanners.
+      I introduced the underlying mathematical concepts — integration over lines, inverse transform, and reconstruction algorithms — and illustrated them with <strong>practical visualization example</strong>.
+      This work provided a concrete <strong>link between theory and real-world applications in medical imaging and inverse problems.</strong></p>
+      <div class="project-links">
+        <a href="files/slidesradon.pdf" target="_blank">Slides (PDF, in french)</a>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Guillaume de Crény</p>
+  </footer>
+
+  <script>
+    // Sticky header compact
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if(window.scrollY > 50){
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      document.body.classList.toggle('no-scroll'); // bloque le scroll
+    });
+
+    // Fade-in / slide-in sections
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
+

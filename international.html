@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Défilement fluide pour les ancres */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Marges adaptées pour le header sticky */
+    section {
+      scroll-margin-top: 120px;
+    }
+
+    /* Style spécifique pour cette page (optionnel) */
+    .hero {
+      text-align: left;
+      padding: 4em 1em;
+      background: linear-gradient(135deg, #1976d2, #63a4ff);
+      color: white;
+      border-radius: 12px;
+      margin-bottom: 3em;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 3.5rem;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER COMMUN ===== -->
+  <header>
+  <h1 class="title">Guillaume de Crény</h1>
+  <div class="menu-toggle">&#9776;</div>
+  <nav class="navbar">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="courses.html" >Engineering course</a></li>
+      <li class="has_undernav">
+        <a href="international.html" class="active">International</a>
+        <ul class="undernav">
+          
+
+
+          <li><a href="international.html#pce">PCE</a></li>
+          <li><a href="international.html#spanish">Spanish</a></li>
+        </ul>
+      </li>
+      <li><a href="civic.html">Sustainability & Civic Engagement</a></li>
+      <li><a href="sport.html">Sport and other activities</a></li>
+      <li><a href="career.html">Career and Development</a></li>     
+    </nav>
+</header>
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main>
+    <div class="hero">
+      <h1>International</h1>
+      <p>During an engineering degree we have to spend 17 weeks abroad, an exceptional opportunity not to miss!</p>
+      <p>On this page, you will discover three international mobility projects.</p>
+    </div>
+
+    <section id="internationalday">
+     <h2>International Day at ENSEEIHT</h2>
+      <div class="international-container">
+      <img src="files/affichejint.png" alt="International Day Poster" class="international-photo">
+      <div class="international-text">
+      <p>
+        During the International Day at ENSEEIHT, I had the chance to meet students who shared their experiences abroad.  
+        It was a really inspiring event that allowed me to discover many mobility opportunities and hear about life in different countries.  
+        These discussions motivated me to plan my own international project and gave me valuable insights into what studying and working abroad can truly be like.
+      </p>
+      </div>
+      </div>
+    </section>
+
+
+    <section id="mobility-projects">
+  <h2>My Mobility Projects</h2>
+  <div class="mobility-container">
+
+    <div class="mobility-card">
+      <img src="spain.jpg" alt="Spain" class="mobility-img">
+      <h3>Spain</h3>
+      <p>
+        Short academic exchange focused on renewable energy systems and applied mathematics.
+        A great opportunity to strengthen my Spanish and discover new academic perspectives.
+      </p>
+      <a href="#" class="mobility-link">Read more</a>
+    </div>
+
+    <div class="mobility-card">
+      <img src="australia.jpg" alt="Australia" class="mobility-img">
+      <h3>Australia</h3>
+      <p>
+        Research internship about numerical modeling and data analysis.
+        I worked in a multidisciplinary team and developed technical and cultural adaptability.
+      </p>
+      <a href="#" class="mobility-link">See project</a>
+    </div>
+
+    <div class="mobility-card">
+      <img src="sweden.jpg" alt="Sweden" class="mobility-img">
+      <h3>Sweden</h3>
+      <p>
+        Engineering project related to fluid dynamics and automation.
+        I collaborated with international students to solve real industrial problems.
+      </p>
+      <a href="#" class="mobility-link">Discover more</a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Section PCE -->
+    <section id="pce">
+      <h2>PCE (Professional Communication in English)</h2>
+      <p>
+        This is my dedicated English language course, focused on developing professional communication skills, presentation techniques, and intercultural collaboration. It prepares me to confidently interact in international academic and professional environments.
+      </p>
+    </section>
+
+    <!-- Section Spanish -->
+    <section id="spanish">
+      <h2>Spanish Learning & Practice</h2>
+      <p>
+        In parallel, I study Spanish as a second language, enhancing my communication abilities and cultural understanding. This will be particularly useful for my upcoming mobility project in a Spanish-speaking country.
+      </p>
+    </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Guillaume de Crény</p>
+  </footer>
+
+  <!-- ===== JS COMMUN ===== -->
+  <script>
+    // Sticky header compact
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if(window.scrollY > 50){
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Menu burger mobile
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="title">Guillaume de Crény</h1>
+  <div class="menu-toggle">&#9776;</div>
+  <nav class="navbar">
+      <li><a href="index.html", class="active">Welcome</a></li>
+      <li><a href="courses.html">Engineering course</a></li>
+      <li class="has_undernav">
+        <a href="international.html">International</a>
+        <ul class="undernav">
+          
+
+
+          <li><a href="international.html#pce">PCE</a></li>
+          <li><a href="international.html#spanish">Spanish</a></li>
+        </ul>
+      </li>
+      <li><a href="civic.html">Sustainability & Civic Engagement</a></li>
+      <li><a href="sport.html">Sport and other activities</a></li>
+      <li><a href="career.html">Career and Development</a></li>     
+    </nav>
+</header>
+
+
+  <main>
+    <section id="about" class="about">
+      <div class="about-content">
+      <img src="files/moi.jpg" title="Hopefully who you were looking for by coming here" class="profile-photo">
+      <div class="about-text">
+      <h2 class="title2">Welcome!</h2>
+      <p>Hello!</p>
+      <p>My name is Guillaume, and I am a first-year engineering student at Toulouse INP ENSEEIHT, specializing in Digital Sciences. Before this, I completed a Bachelor's degree in Mathematics at Paul Sabatier University.</p>  
+      <p>As a child, I would spend hours experimenting with the features of our family computer, always fascinated by how it worked. This curiosity has stayed with me ever since.</p>
+      <p>Today, I’m particularly interested in data science and multimedia, and I am passionate about their practical applications in everyday life. Ultimately, I would love to contribute to projects that use technology to address real-world challenges, such as geomatics and database management, which really excite me!</p>
+      </div>
+      </div>
+    </section>
+
+
+
+    <section id="about">
+      <h2>Let's get in touch!</h2>
+      <p>Here is a short video to give you a better idea of who I am.</p>
+
+      <div class="video-container">
+        <video controls>
+        <source src="files/elevator.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        </div>
+    </section>
+
+
+    
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:guillaume.decrenyvives@etu.toulouse-inp.fr">guillaume.decrenyvives@etu.toulouse-inp.fr</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Guillaume de Crény</p>
+  </footer>
+
+  <script>
+    // Sticky header compact
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if(window.scrollY > 50){
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      document.body.classList.toggle('no-scroll'); // bloque le scroll
+    });
+
+    // Fade-in / slide-in sections
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
+
